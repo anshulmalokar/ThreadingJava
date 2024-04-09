@@ -42,8 +42,26 @@ Runnable obj = new Runnable() {
 Theread t = new Thread(obj);
 t.start();
 
-
 Runnable run = () -> {
 
 }
 Thread t = new Thread(run);
+
+<!-- Synchronization meaning-->
+class Counter{
+    public synchronized void increment(){
+        count++;
+    }
+}
+
+main(){
+    Runnable r1 = new Runnable(){
+
+    }
+    Thread t = new Thread(r1);
+    t.start();
+    Threat t2 = new Thread(new Runnable() {
+
+    });
+    t2.start();
+}
